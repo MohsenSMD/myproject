@@ -2,13 +2,12 @@
 
 namespace Models
 {
-    class databasecontext  :System.Data.Entity.DbContext
+    class DatabaseContext :System.Data.Entity.DbContext
     {
-        public databasecontext()
+        public DatabaseContext()
         {
 
         }
-
-      public System.Data.Entity.DbSet<Person> people { get; set; }
+        public System.Data.Entity.DbSet<user> users { get; set; }
     }
 }
